@@ -6,3 +6,10 @@ Author URI:     http://www.biped-design.com
 Template:       twentytwelve
 Version:        0.1.0
 */
+
+/*
+All child theme styles are located in ./child-styles.less.
+This file only serves to load child theme metadata and the parent theme styles. 
+*/
+
+@import url("../twentytwelve/style.css");
