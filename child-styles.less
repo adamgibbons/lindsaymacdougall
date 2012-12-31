@@ -1,0 +1,121 @@
+@black: #1a1919;
+@red: #bb2030;
+@gray: #777;
+@darkgray: #333;
+
+@beau-blue: #C6CFD6;
+@cool-gray: #E7E7EF;
+@charleston-green: #003031;
+
+@aquamarine: #35adb1;
+
+body{
+
+  font-family:helvetica, sans-serif;
+  font-size:18px;
+  line-height:24px;
+  color:@gray;
+  p, ul, li {
+    font-size:1em;
+  }
+  .entry-title a{
+    color:@darkgray;
+  }
+  #header{
+    text-align: right;
+    #branding{
+      font-size:1em;
+      padding-top:0;
+      font-family:helvetica, sans-serif;
+      .social-icons{
+        list-style:none;
+        margin: 1em 0;
+        li{
+          display:inline;
+          margin-left: .6em;
+        }
+      }
+      #blog-title{
+        font-family:inherit;
+        font-size:3.5em;
+        margin-bottom:.5em;
+        color:@black;
+        a{
+          color:inherit;
+        }
+      }
+      #blog-description{
+        font-family:inherit;
+        font-size:1.5em;
+        font-style: normal;
+        font-weight:400;
+        margin-bottom:1em;
+        color:@red;
+      }
+      #header-img{
+        img{
+          width:58%;
+        }
+      }
+    }
+    #access{
+      font-size:18px;
+      height:auto;
+      padding: .7em 0 1.7em 0;
+      border-top:1px dotted @beau-blue;
+      border-bottom:1px dotted @beau-blue;
+      .menu{
+        .sf-menu{
+          .page_item{
+            margin-right:1em;
+            font-weight:900;
+            a{
+              font-family:helvetica, sans-serif;
+              font-size:1em;
+              border:0;
+              margin:0;
+              padding:0;
+            }
+          }
+        }
+      }
+    }
+  }
+  #main{
+    padding-top:3em;
+    #container{
+      font-family:helvetica, sans-serif;
+      #content{
+        width: 100%;
+      }
+    }
+    #primary{
+      font-family:helvetica, sans-serif;
+      border:0;
+      padding-top:.5em;
+      font-size:1em;
+      .widgetcontainer{
+        border-left:1px dotted @beau-blue;
+        padding-left:1em;
+        margin-bottom:2em;
+      }
+      a{
+        color:@aquamarine;
+      }
+      .widgettitle{
+        font-style:normal;
+        margin-bottom:.5em;
+      }
+
+      [id^=recent-posts]{
+        ul {
+          margin-left:0;
+          li {
+            margin: .5em 0;
+            list-style:none;
+          }
+        }
+      }
+    }
+  }
+}

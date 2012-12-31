@@ -1,9 +1,9 @@
 /*
 Theme Name:     Lindsay MacDougall
-Description:    Custom theme built as child of Twenty Twelve theme
+Description:    Custom theme built as child of Thematic theme
 Author:         Adam Gibbons/Biped Design
 Author URI:     http://www.biped-design.com
-Template:       twentytwelve
+Template:       thematic
 Version:        0.1.0
 */
 
@@ -12,4 +12,21 @@ All child theme styles are located in ./child-styles.less.
 This file only serves to load child theme metadata and the parent theme styles. 
 */
 
-@import url("../twentytwelve/style.css");
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* Overriding Thematic's styles for congruity with WP-Admin > Appearance > Header default header text color settings */
+#blog-description { color: #000 }
