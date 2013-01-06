@@ -13,8 +13,6 @@ function lm_social_icons() {
 }
 add_action('thematic_header','lm_social_icons', 2);
 
-
-
 function childtheme_header_imgs() {
   ?>
   <div id="header-img">
@@ -23,9 +21,5 @@ function childtheme_header_imgs() {
   <?php
 }
 add_action('thematic_header', 'childtheme_header_imgs', 7);
-
-
-
-
 
 ?>
