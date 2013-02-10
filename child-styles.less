@@ -56,7 +56,7 @@ body{
       }
       #blog-title{
         font-family: @PontanoSans;
-        text-transform: uppercase;
+        text-transform: lowercase;
         font-size:3.5em;
         margin-bottom:.5em;
         color:@darkgray;
@@ -71,6 +71,7 @@ body{
         font-weight:400;
         margin-bottom:1em;
         color:@red;
+        text-transform: lowercase;
       }
       #header-img{
         img{
@@ -146,6 +147,38 @@ body{
           li {
             margin: .5em 0;
             list-style:none;
+          }
+        }
+      }
+
+      /* Call to Action form */
+      #text-2{
+        padding:1em;
+        background-color:#F4BFCA;
+        border: 1px solid #DB6A80;
+        border-radius: 4px;
+        color:#444;
+        label{
+          margin-top:5em;
+        }
+        input[type=text], textarea{
+          width:57.5%;
+          border:none;
+          padding: .5em;
+          font-family:helvetica;
+        }
+        input[type=submit]{
+          border:none;
+          padding:.5em;
+          font-size: 14px;
+          font-family:helvetica;
+          position: relative;
+          top:5px;
+          border-radius: 4px;
+          background:#c95b70;
+          color:white;
+          &:hover{
+            background: #da687e;
           }
         }
       }
