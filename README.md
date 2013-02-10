@@ -1,4 +1,4 @@
 lindsaymacdougall
 =================
 
-WP childtheme
+WP childtheme for lindsaymacdougall.com.
